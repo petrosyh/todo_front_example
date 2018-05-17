@@ -28,3 +28,12 @@ describe('toggle todo2', () => {
     )).toEqual([{ id:0, text:"eat dinner", completed: false}])
   })
 })
+
+describe('toggle todo3', () => {
+  it('toggle todo change state2', () => {
+    expect(todolist_reducer(
+	[{ id:0, text:"eat dinner", completed: true}, { id:1, text:"sing a song", completed: false }],
+	toggleTodo(1)
+    )).toEqual([{ id:0, text:"eat dinner", completed: true}, { id:1, text:"sing a song", completed: true}])
+  })
+})
