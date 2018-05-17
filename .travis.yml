@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - v6
 script:
-  - npm test -- --coverage
+  - npm test -- --coverage && npm test
 sudo: false
 cache:
   - yarn
