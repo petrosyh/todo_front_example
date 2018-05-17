@@ -3,6 +3,7 @@ node_js:
   - v6
 script:
   - npm test -- --coverage
+sudo: false
 cache:
   - yarn
 after_success:
